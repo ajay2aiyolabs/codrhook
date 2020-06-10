@@ -18,24 +18,8 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 	      System.out.println("Current Directory = " + System.getProperty("user.dir"));
-		SpringApplication.run(DemoApplication.class, args);
-	      logger.info("just a test info log");
+		SpringApplication.run(DemoApplication.class, args);		
 
 	}
-	public static void appendStrToFile(String fileName, 
-            String str) 
-{ 
-try { 
-
-// Open given file in append mode. 
-BufferedWriter out = new BufferedWriter( 
-new FileWriter(fileName, true)); 
-out.write(str+"\n"); 
-out.close(); 
-} 
-catch (IOException e) { 
-System.out.println("exception occoured" + e); 
-} 
-} 
 
 }
